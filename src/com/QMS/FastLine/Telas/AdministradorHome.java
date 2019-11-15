@@ -71,6 +71,7 @@ public class AdministradorHome extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         tabela.setBackground(new java.awt.Color(255, 153, 153));
+        tabela.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         tabela.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -90,6 +91,7 @@ public class AdministradorHome extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tabela);
 
         tabelaF.setBackground(new java.awt.Color(51, 204, 255));
+        tabelaF.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         tabelaF.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 

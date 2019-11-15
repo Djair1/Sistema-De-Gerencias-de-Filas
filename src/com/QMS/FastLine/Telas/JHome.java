@@ -21,7 +21,7 @@ public class JHome extends javax.swing.JFrame {
      */
     public JHome() {
         initComponents();
-
+       CriarSenha();
     }
 
     /**
@@ -168,14 +168,11 @@ public class JHome extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
           try {
-
-            CadastroAdmin ca = new CadastroAdmin();
-            ca.adminDevelomp();
-            Jadminlogin jd = new Jadminlogin();
+            JAdminLogar jd = new JAdminLogar();
             jd.setVisible(true);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Falha de conexão com o Banco de Dados");
-        }
+            JOptionPane.showMessageDialog(null, "Falha de conexão com o Banco de Dados");
+        } 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -233,4 +230,18 @@ public class JHome extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
 
-}
+    
+  public void CriarSenha(){
+  
+      CadastroAdmin ca = new CadastroAdmin();
+      ca.adminDevelomp();
+ 
+  
+  }  
+    
+}  
+    
+    
+
+
+
